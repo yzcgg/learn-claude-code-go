@@ -16,7 +16,7 @@ import (
 
 var (
 	localConfig Config
-	WORK_DIR    = "/Users/yangzhicheng/Desktop/yzc/codes/learn-claude-code-go"
+	WORK_DIR    = "XXX"
 )
 
 func main() {
@@ -137,8 +137,8 @@ type Config struct {
 
 func LoadConfig() Config {
 	return Config{
-		APIKey:  os.Getenv("OPENAI_API_KEY"),
-		BaseUrl: os.Getenv("OPENAI_API_BASE_URL"),
-		Model:   os.Getenv("OPENAI_API_MODEL"),
+		APIKey:  os.Getenv("DEEPSEEK_API_KEY"),
+		BaseUrl: os.Getenv("DEEPSEEK_API_BASE_URL"),
+		Model:   os.Getenv("DEEPSEEK_API_MODEL"),
 	}
 }
